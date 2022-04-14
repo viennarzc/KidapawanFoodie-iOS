@@ -16,6 +16,7 @@
 		212ED0E228081A1700D8FC1B /* KidapawanFoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0E128081A1700D8FC1B /* KidapawanFoodieTests.swift */; };
 		212ED0EC28081A1700D8FC1B /* KidapawanFoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0EB28081A1700D8FC1B /* KidapawanFoodieUITests.swift */; };
 		212ED0EE28081A1700D8FC1B /* KidapawanFoodieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0ED28081A1700D8FC1B /* KidapawanFoodieUITestsLaunchTests.swift */; };
+		212ED0FB28081BE500D8FC1B /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0FA28081BE500D8FC1B /* ExploreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		212ED0E728081A1700D8FC1B /* KidapawanFoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidapawanFoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		212ED0EB28081A1700D8FC1B /* KidapawanFoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidapawanFoodieUITests.swift; sourceTree = "<group>"; };
 		212ED0ED28081A1700D8FC1B /* KidapawanFoodieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidapawanFoodieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		212ED0FA28081BE500D8FC1B /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				212ED0CB28081A1400D8FC1B /* KidapawanFoodieApp.swift */,
 				212ED0CD28081A1400D8FC1B /* ContentView.swift */,
+				212ED0FA28081BE500D8FC1B /* ExploreView.swift */,
 				212ED0CF28081A1700D8FC1B /* Assets.xcassets */,
 				212ED0D428081A1700D8FC1B /* Persistence.swift */,
 				212ED0D628081A1700D8FC1B /* KidapawanFoodie.xcdatamodeld */,
@@ -267,6 +270,7 @@
 				212ED0CE28081A1400D8FC1B /* ContentView.swift in Sources */,
 				212ED0D828081A1700D8FC1B /* KidapawanFoodie.xcdatamodeld in Sources */,
 				212ED0CC28081A1400D8FC1B /* KidapawanFoodieApp.swift in Sources */,
+				212ED0FB28081BE500D8FC1B /* ExploreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
