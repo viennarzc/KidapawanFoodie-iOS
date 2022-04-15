@@ -17,6 +17,7 @@
 		212ED0EC28081A1700D8FC1B /* KidapawanFoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0EB28081A1700D8FC1B /* KidapawanFoodieUITests.swift */; };
 		212ED0EE28081A1700D8FC1B /* KidapawanFoodieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0ED28081A1700D8FC1B /* KidapawanFoodieUITestsLaunchTests.swift */; };
 		212ED0FB28081BE500D8FC1B /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ED0FA28081BE500D8FC1B /* ExploreView.swift */; };
+		213C3EAC2808FD870048A52B /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213C3EAB2808FD870048A52B /* SearchResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		212ED0EB28081A1700D8FC1B /* KidapawanFoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidapawanFoodieUITests.swift; sourceTree = "<group>"; };
 		212ED0ED28081A1700D8FC1B /* KidapawanFoodieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidapawanFoodieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		212ED0FA28081BE500D8FC1B /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		213C3EAB2808FD870048A52B /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		212ED0BF28081A1400D8FC1B = {
 			isa = PBXGroup;
 			children = (
+				213C3EAB2808FD870048A52B /* SearchResultsView.swift */,
 				212ED0CA28081A1400D8FC1B /* KidapawanFoodie */,
 				212ED0E028081A1700D8FC1B /* KidapawanFoodieTests */,
 				212ED0EA28081A1700D8FC1B /* KidapawanFoodieUITests */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212ED0D528081A1700D8FC1B /* Persistence.swift in Sources */,
+				213C3EAC2808FD870048A52B /* SearchResultsView.swift in Sources */,
 				212ED0CE28081A1400D8FC1B /* ContentView.swift in Sources */,
 				212ED0D828081A1700D8FC1B /* KidapawanFoodie.xcdatamodeld in Sources */,
 				212ED0CC28081A1400D8FC1B /* KidapawanFoodieApp.swift in Sources */,
