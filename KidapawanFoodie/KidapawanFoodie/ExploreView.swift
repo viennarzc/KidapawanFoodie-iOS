@@ -30,22 +30,27 @@ struct ExploreView: View {
     @State var isSearching: Bool = false
     @State var searchResultSectionTitle: String = ""
     
+    @State var isSeeAllSearchResultsShown: Bool = false
+    
     var body: some View {
         NavigationView {
             
             ScrollView(.vertical) {
                 Spacer(minLength: 16)
-                
-//                if isSearchResultsShown {
-//                    SearchResultsView(items: $filteredRestaurants)
-//                        .padding(.horizontal)
 
-//                        .transition(.scale.animation(.easeInOut))
-//                } else {
-                ExploreContentView(items: filteredRestaurants, numberOfResults: isSearching ? filteredRestaurants.count : restaurants.count, isSearching: $isSearching)
-//                        .transition(.scale.animation(.easeInOut))
+                ExploreContentView(items: filteredRestaurants, numberOfResults: isSearching ? filteredRestaurants.count : restaurants.count, isSearching: $isSearching, seeAllTapped: {
                     
-//                }
+                    isSeeAllSearchResultsShown = true
+                  
+                    
+                })
+                
+                NavigationLink(isActive: $isSeeAllSearchResultsShown, destination: {
+                    SearchResultsView(items: filteredRestaurants)
+                    
+                }, label: {
+                    EmptyView()
+                })
                 
             }
                 
@@ -178,8 +183,9 @@ struct Address {
 struct ExploreContentView: View {
     var items: [String]
     var numberOfResults: Int
+    @Binding var isSearching: Bool
     
-    @Binding var isSearching: Bool 
+    var seeAllTapped: () -> Void
     
     var body: some View {
         LazyVStack(alignment: .leading, spacing: 16) {
@@ -213,6 +219,7 @@ struct ExploreContentView: View {
                     Spacer()
                     
                     Button {
+                        seeAllTapped()
                         
                     } label: {
                         Text("See all")

@@ -8,29 +8,36 @@
 import SwiftUI
 
 struct SearchResultsView: View {
-    @Binding var items: [String]
+    var items: [String]
     
     var body: some View {
-
-        Section {
-            ForEach(items, id: \.self) { item in
-                RestoCardItem(title: item)
-            }
             
-        } header: {
-            HStack {
-                Text("\(items.count) Restaurants")
-                    .font(.title3.weight(.semibold))
-                
-                Spacer()
+            ScrollView {
+                Section {
+                    
+                    ForEach(items, id: \.self) { item in
+                        RestoCardItem(title: item)
+                    }
+                    
+                } header: {
+                    HStack {
+                        Text("\(items.count) Restaurants")
+                            .font(.title3.weight(.semibold))
+                        
+                        Spacer()
+                    }
+                }
+                .padding(.horizontal)
             }
-        }
+            .navigationTitle("Restaurants")
+            
+        
 
     }
 }
 
 struct SearchResultsView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchResultsView(items: .constant(["Cafe"]))
+        SearchResultsView(items: ["Cafe", "Brew"])
     }
 }
